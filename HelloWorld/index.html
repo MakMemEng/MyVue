@@ -9,7 +9,14 @@
 </head>
 <body>
   <div id="app">
-    <p v-if="toggle">Hello</p>
+    <!-- <ul>
+      <li v-for="value in user">{{ value }}</li>
+    </ul> -->
+    <ul>
+      <li v-for="(value, key) in user">
+        {{ key }}: {{ value }}
+      </li>
+    </ul>
   </div>
   <script src="https://unpkg.com/vue@3.1.5"></script>
   <script src="js/main.js"></script>
