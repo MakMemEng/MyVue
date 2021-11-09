@@ -9,8 +9,7 @@
 </head>
 <body>
   <div id="app">
-    <input type="text" v-bind:value="message">
-    <!--属性の値に{{ message }}は使えない-->
+    <p v-if="toggle">Hello</p>
   </div>
   <script src="https://unpkg.com/vue@3.1.5"></script>
   <script src="js/main.js"></script>
