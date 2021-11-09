@@ -9,10 +9,8 @@
 </head>
 <body>
   <div id="app">
-    <p>{{ message }}</p>
-    <p>{{ count }}</p>
-    <p>{{ user.prefecture }}</p>
-    <p>{{ colors[1] }}</p>
+    <input type="text" v-bind:value="message">
+    <!--属性の値に{{ message }}は使えない-->
   </div>
   <script src="https://unpkg.com/vue@3.1.5"></script>
   <script src="js/main.js"></script>
