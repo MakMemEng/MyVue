@@ -1,12 +1,7 @@
 const app = Vue.createApp({
   data: ()　=> ({
-    now: '-'
+    message: 'Hello Vue.js!'
   }),
-  methods: {
-    onClick: function() {
-      // console.log('onClick')
-      this.now = new Date().toLocaleString()
-    }
-  }
+  // ↑カンマの役割がよく分からない… 無いと初期値がセットされない
 })
 app.mount('#app')
