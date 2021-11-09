@@ -1,6 +1,10 @@
 const app = Vue.createApp({
   data: ()　=> ({
-    toggle: true
+    user: {
+      firstName: 'Taro',
+      lastName: 'Yamada',
+      age: 23
+    }
   })
 })
 app.mount('#app')
